@@ -158,7 +158,20 @@ public abstract partial class SharedBuckleSystem
     private void OnBuckleDownAttempt(EntityUid uid, BuckleComponent component, DownAttemptEvent args)
     {
         if (component.Buckled)
-            args.Cancel();
+        {
+            TryComp<StrapComponent>(component.BuckledTo, out var strapComp);
+
+            if (strapComp == null || !strapComp.EjectOnDown)
+                args.Cancel();
+        }
+    }
+
+    private void OnBuckleDown(EntityUid uid, BuckleComponent component, ref DownedEvent args)
+    {
+        if (component.Buckled)
+        {
+            Unbuckle((uid, component), uid);
+        }
     }
 
     private void OnBuckleStandAttempt(EntityUid uid, BuckleComponent component, StandAttemptEvent args)
