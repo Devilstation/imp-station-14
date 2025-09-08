@@ -1,0 +1,9 @@
+﻿
+- type: cargoProduct
+  id: FunATV
+  icon:
+    sprite: Objects/Vehicles/atv.rsi
+    state: vehicle
+  product: CrateFunATV
+  cost: 3000
+  group: market

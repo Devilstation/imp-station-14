@@ -1,0 +1,19 @@
+﻿- type: entity
+  id: ActionHorn
+  name: Honk!
+  description: Beep the horn at whoever you will run over. DRIVING IN MY CAR, RIGHT AFTER A BEEEEER, HEY THAT BUMP, IS SHAPED LIKE A CAPTAIN!
+  components:
+  - type: InstantAction
+    useDelay: 1
+    icon: { sprite: Objects/Fun/bikehorn.rsi, state: icon }
+    event: !type:HornActionEvent
+
+- type: entity
+  id: ActionSiren
+  name: Siren
+  description: Alert your victim to your presence.
+  components:
+  - type: InstantAction
+    useDelay: 1
+    icon: { sprite: Objects/Fun/bikehorn.rsi, state: icon }
+    event: !type:SirenActionEvent
