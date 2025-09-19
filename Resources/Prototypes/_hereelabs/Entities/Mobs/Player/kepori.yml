@@ -1,0 +1,8 @@
+- type: entity
+  save: false
+  name: Urist McFeathers
+  suffix: Kepori
+  parent: BaseMobKepori
+  id: MobKepori
+
+#Weh

@@ -1,0 +1,98 @@
+- type: entity
+  save: false
+  name: Urist McFeathers
+  parent: BaseMobSpeciesOrganic
+  id: BaseMobKepori
+  abstract: true
+  components:
+  - type: GoobAbsorbable
+  - type: HumanoidAppearance
+    species: Kepori
+    hideLayersOnEquip:
+    - HeadTop
+    - HeadSide
+  - type: Hunger
+  - type: Puller
+    needsHands: false
+  - type: Thirst
+  - type: Icon
+    sprite: Mobs/Species/Kepori/parts.rsi
+    state: full
+  - type: Body
+    prototype: Kepori
+    requiredLegs: 2
+  - type: Butcherable
+    butcheringType: Spike
+    spawned:
+    - id: FoodMeatLizard
+      amount: 5
+  - type: Speech
+  #  speechSounds: Lizard
+    speechVerb: Kepori
+  #  allowedEmotes: ['Thump', 'Hiss']
+  - type: TypingIndicator
+    proto: lizard
+  #- type: Vocal
+  #  sounds:
+  #    Male: MaleKepori
+  #    Female: FemaleKepori
+  #    Unsexed: UnisexKepori
+  - type: BodyEmotes
+    soundsId: KeporiBodyEmotes
+  - type: Damageable
+    damageContainer: Biological
+    damageModifierSet: Scale
+  - type: MeleeWeapon
+    soundHit:
+      collection: AlienClaw
+    angle: 30
+    animation: WeaponArcClaw
+    damage:
+      types:
+        Slash: 5
+  - type: Temperature
+    heatDamageThreshold: 365
+    coldDamageThreshold: 290
+    currentTemperature: 340.15
+    specificHeat: 42
+    coldDamage:
+      types:
+        Cold: 1.0 #per second, scales with temperature & other constants
+    heatDamage:
+      types:
+        Heat: 0.8 #per second, scales with temperature & other constants
+  - type: TemperatureSpeed
+    thresholds:
+      325: 0.9
+      310: 0.8
+      290: 0.7
+  - type: Inventory
+    speciesId: kepori
+    femaleDisplacements:
+      jumpsuit:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Human/displacement.rsi
+            state: jumpsuit-female
+
+- type: entity
+  parent: BaseSpeciesDummy
+  id: MobKeporiDummy
+  categories: [ HideSpawnMenu ]
+  description: A dummy kepori meant to be used in character setup.
+  components:
+  - type: HumanoidAppearance
+    species: Kepori
+    hideLayersOnEquip:
+    - HeadTop
+    - HeadSide
+  - type: Inventory
+    speciesId: kepori
+    femaleDisplacements:
+      jumpsuit:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Human/displacement.rsi
+            state: jumpsuit-female
+
+#Weh

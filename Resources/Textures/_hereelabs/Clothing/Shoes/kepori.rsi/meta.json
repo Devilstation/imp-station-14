@@ -1,0 +1,99 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 48,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "white",
+      "directions": 4
+    },
+    {
+      "name": "grey",
+      "directions": 4
+    },
+    {
+      "name": "black",
+      "directions": 4
+    },
+    {
+      "name": "red",
+      "directions": 4
+    },
+    {
+      "name": "maroon",
+      "directions": 4
+    },
+    {
+      "name": "orange",
+      "directions": 4
+    },
+    {
+      "name": "orange1",
+      "directions": 4
+    },
+    {
+      "name": "yellow",
+      "directions": 4
+    },
+    {
+      "name": "green",
+      "directions": 4
+    },
+    {
+      "name": "darkgreen",
+      "directions": 4
+    },
+    {
+      "name": "teal",
+      "directions": 4
+    },
+    {
+      "name": "blue",
+      "directions": 4
+    },
+    {
+      "name": "darkblue",
+      "directions": 4
+    },
+    {
+      "name": "purple",
+      "directions": 4
+    },
+    {
+      "name": "pink",
+      "directions": 4
+    },
+    {
+      "name": "brown",
+      "directions": 4
+    },
+    {
+      "name": "lightbrown",
+      "directions": 4
+    },
+    {
+      "name": "combat",
+      "directions": 4
+    },
+    {
+      "name": "jackboots",
+      "directions": 4
+    },
+    {
+      "name": "explorer",
+      "directions": 4
+    },
+    {
+      "name": "workboots",
+      "directions": 4
+    },
+    {
+      "name": "winterboots",
+      "directions": 4
+    }
+  ]
+}

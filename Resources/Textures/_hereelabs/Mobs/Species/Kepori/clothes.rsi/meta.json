@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "license": null,
+  "copyright": null,
+  "size": {
+    "x": 48,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "spacesuit",
+      "directions": 4
+    },
+    {
+      "name": "hardsuit",
+      "directions": 4
+    },
+    {
+      "name": "under",
+      "directions": 4
+    },
+    {
+      "name": "under_skirt",
+      "directions": 4
+    },
+    {
+      "name": "pants",
+      "directions": 4
+    },
+    {
+      "name": "armor",
+      "directions": 4
+    },
+    {
+      "name": "coat",
+      "directions": 4
+    },
+    {
+      "name": "cloak",
+      "directions": 4
+    },
+    {
+      "name": "satchel",
+      "directions": 4
+    },
+    {
+      "name": "gloves",
+      "directions": 4
+    },
+    {
+      "name": "scarf",
+      "directions": 4
+    }
+  ]
+}

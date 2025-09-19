@@ -1,0 +1,119 @@
+# TODO: Add descriptions (many)
+# TODO BODY: Part damage
+- type: entity
+  id: PartKepori
+  parent: [BaseItem, BasePart]
+  name: "kepori body part"
+  abstract: true
+  components:
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Fat
+        Quantity: 3
+      - ReagentId: Blood
+        Quantity: 10
+
+- type: entity
+  id: TorsoKepori
+  name: "kepori torso"
+  parent: [PartKepori, BaseTorso]
+  components:
+  - type: Sprite
+    sprite: _hereelabs/Mobs/Species/Kepori/parts.rsi
+    state: "torso_m"
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Fat
+        Quantity: 10
+      - ReagentId: Blood
+        Quantity: 20
+
+- type: entity
+  id: HeadKepori
+  name: "kepori head"
+  parent: [PartKepori, BaseHead]
+  components:
+  - type: Sprite
+    sprite: _hereelabs/Mobs/Species/Kepori/parts.rsi
+    state: "head_m"
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Fat
+        Quantity: 5
+      - ReagentId: Blood
+        Quantity: 10
+
+- type: entity
+  id: LeftArmKepori
+  name: "left kepori arm"
+  parent: [PartKepori, BaseLeftArm]
+  components:
+  - type: Sprite
+    sprite: _hereelabs/Mobs/Species/Kepori/parts.rsi
+    state: "l_arm"
+
+- type: entity
+  id: RightArmKepori
+  name: "right kepori arm"
+  parent: [PartKepori, BaseRightArm]
+  components:
+  - type: Sprite
+    sprite: _hereelabs/Mobs/Species/Kepori/parts.rsi
+    state: "r_arm"
+
+- type: entity
+  id: LeftHandKepori
+  name: "left kepori hand"
+  parent: [PartKepori, BaseLeftHand]
+  components:
+  - type: Sprite
+    sprite: _hereelabs/Mobs/Species/Kepori/parts.rsi
+    state: "l_hand"
+
+- type: entity
+  id: RightHandKepori
+  name: "right kepori hand"
+  parent: [PartKepori, BaseRightHand]
+  components:
+  - type: Sprite
+    sprite: _hereelabs/Mobs/Species/Kepori/parts.rsi
+    state: "r_hand"
+
+- type: entity
+  id: LeftLegKepori
+  name: "left kepori leg"
+  parent: [PartKepori, BaseLeftLeg]
+  components:
+  - type: Sprite
+    sprite: _hereelabs/Mobs/Species/Kepori/parts.rsi
+    state: "l_leg"
+
+- type: entity
+  id: RightLegKepori
+  name: "right kepori leg"
+  parent: [PartKepori, BaseRightLeg]
+  components:
+  - type: Sprite
+    sprite: _hereelabs/Mobs/Species/Kepori/parts.rsi
+    state: "r_leg"
+
+- type: entity
+  id: LeftFootKepori
+  name: "left kepori foot"
+  parent: [PartKepori, BaseLeftFoot]
+  components:
+  - type: Sprite
+    sprite: _hereelabs/Mobs/Species/Kepori/parts.rsi
+    state: "l_foot"
+
+- type: entity
+  id: RightFootKepori
+  name: "right kepori foot"
+  parent: [PartKepori, BaseRightFoot]
+  components:
+  - type: Sprite
+    sprite: _hereelabs/Mobs/Species/Kepori/parts.rsi
+    state: "r_foot"

@@ -1,0 +1,49 @@
+﻿- type: body
+  name: "kepori"
+  id: Kepori
+  root: torso
+  slots:
+    head:
+      part: HeadKepori
+      connections:
+      - torso
+      organs:
+        brain: OrganHumanBrain
+        eyes: OrganHumanEyes
+    torso:
+      part: TorsoKepori
+      organs:
+        heart: OrganAnimalHeart
+        lungs: OrganHumanLungs
+        stomach: OrganKeporiStomach
+        liver: OrganAnimalLiver
+        kidneys: OrganHumanKidneys
+      connections:
+      - right arm
+      - left arm
+      - right leg
+      - left leg
+    right arm:
+      part: RightArmKepori
+      connections:
+      - right hand
+    left arm:
+      part: LeftArmKepori
+      connections:
+      - left hand
+    right hand:
+      part: RightHandKepori
+    left hand:
+      part: LeftHandKepori
+    right leg:
+      part: RightLegKepori
+      connections:
+      - right foot
+    left leg:
+      part: LeftLegKepori
+      connections:
+      - left foot
+    right foot:
+      part: RightFootKepori
+    left foot:
+      part: LeftFootKepori

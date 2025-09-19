@@ -1,0 +1,151 @@
+- type: species
+  id: Kepori
+  name: species-name-kepori
+  roundStart: true
+  prototype: MobKepori
+  sprites: MobKeporiSprites
+  defaultSkinTone: "#34a223"
+  markingLimits: MobKeporiMarkingLimits
+  dollPrototype: MobKeporiDummy
+  skinColoration: Hues
+  maleFirstNames: NamesKeporiMale
+  femaleFirstNames: NamesKeporiFemale
+  naming: FirstDashFirst
+  sexes:
+  - Male
+  - Female
+  - Unsexed
+
+- type: speciesBaseSprites
+  id: MobKeporiSprites
+  sprites:
+    Head: MobKeporiHead
+    Snout: MobHumanoidAnyMarking
+    Chest: MobKeporiTorso
+    HeadTop: MobHumanoidAnyMarking
+    HeadSide: MobHumanoidAnyMarking
+    LArm: MobKeporiLArm
+    RArm: MobKeporiRArm
+    LHand: MobKeporiLHand
+    RHand: MobKeporiRHand
+    Eyes: MobKeporiEyes
+    LLeg: MobKeporiLLeg
+    RLeg: MobKeporiRLeg
+    LFoot: MobKeporiLFoot
+    RFoot: MobKeporiRFoot
+
+- type: markingPoints
+  id: MobKeporiMarkingLimits
+  onlyWhitelisted: true
+  points:
+    Hair:
+      points: 0
+      required: false
+    FacialHair:
+      points: 0
+      required: false
+    HeadTop:
+      points: 2
+      required: false
+    HeadSide:
+      points: 1
+      required: false
+    Chest:
+      points: 4
+      required: false
+    Legs:
+      points: 8
+      required: false
+    Arms:
+      points: 8
+      required: false
+
+- type: humanoidBaseSprite
+  id: MobKeporiEyes
+  baseSprite:
+    sprite: _hereelabs/Mobs/Species/Kepori/parts.rsi
+    state: eyes
+
+- type: humanoidBaseSprite
+  id: MobKeporiHead
+  baseSprite:
+    sprite: _hereelabs/Mobs/Species/Kepori/parts.rsi
+    state: head_m
+
+- type: humanoidBaseSprite
+  id: MobKeporiHeadMale
+  baseSprite:
+    sprite: _hereelabs/Mobs/Species/Kepori/parts.rsi
+    state: head_m
+
+- type: humanoidBaseSprite
+  id: MobKeporiHeadFemale
+  baseSprite:
+    sprite: _hereelabs/Mobs/Species/Kepori/parts.rsi
+    state: head_f
+
+- type: humanoidBaseSprite
+  id: MobKeporiTorso
+  baseSprite:
+    sprite: _hereelabs/Mobs/Species/Kepori/parts.rsi
+    state: torso_m
+
+- type: humanoidBaseSprite
+  id: MobKeporiTorsoMale
+  baseSprite:
+    sprite: _hereelabs/Mobs/Species/Kepori/parts.rsi
+    state: torso_m
+
+- type: humanoidBaseSprite
+  id: MobKeporiTorsoFemale
+  baseSprite:
+    sprite: _hereelabs/Mobs/Species/Kepori/parts.rsi
+    state: torso_f
+
+- type: humanoidBaseSprite
+  id: MobKeporiLLeg
+  baseSprite:
+    sprite: _hereelabs/Mobs/Species/Kepori/parts.rsi
+    state: l_leg
+
+- type: humanoidBaseSprite
+  id: MobKeporiLHand
+  baseSprite:
+    sprite: _hereelabs/Mobs/Species/Kepori/parts.rsi
+    state: l_hand
+
+- type: humanoidBaseSprite
+  id: MobKeporiLArm
+  baseSprite:
+    sprite: _hereelabs/Mobs/Species/Kepori/parts.rsi
+    state: l_arm
+
+- type: humanoidBaseSprite
+  id: MobKeporiLFoot
+  baseSprite:
+    sprite: _hereelabs/Mobs/Species/Kepori/parts.rsi
+    state: l_foot
+
+- type: humanoidBaseSprite
+  id: MobKeporiRLeg
+  baseSprite:
+    sprite: _hereelabs/Mobs/Species/Kepori/parts.rsi
+    state: r_leg
+
+- type: humanoidBaseSprite
+  id: MobKeporiRHand
+  baseSprite:
+    sprite: _hereelabs/Mobs/Species/Kepori/parts.rsi
+    state: r_hand
+
+- type: humanoidBaseSprite
+  id: MobKeporiRArm
+  baseSprite:
+    sprite: _hereelabs/Mobs/Species/Kepori/parts.rsi
+    state: r_arm
+
+- type: humanoidBaseSprite
+  id: MobKeporiRFoot
+  baseSprite:
+    sprite: _hereelabs/Mobs/Species/Kepori/parts.rsi
+    state: r_foot
